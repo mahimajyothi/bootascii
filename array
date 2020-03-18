@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+	public class Array {
+		   public static void main(String args[]){
+			  //Initializing the integer values
+			  int i=0;
+			  int j=0;
+			  boolean a=false;
+		      int data[] = {10,20,32,50,60};
+		      //give input through console
+		      Scanner sc=new Scanner(System.in);
+		      System.out.println("Enter a number:");
+		      int num=sc.nextInt();
+              //
+		      for(i=0; i<=4; i++){
+		    	    // check if array of list equals to given number or not
+		            if(num == data[i]){
+		        	a=true;
+		            j=i;
+		            break;
+		         }
+		      }
+		      if(a){
+		            //print found given condition is true
+		        	System.out.println("Found @ pos"+j);
+		           }
+		      else
+		      {
+		    	 //print not found given condition is false
+		    	 System.out.println("Not found");
+	          }    
+		    } 
+          }
